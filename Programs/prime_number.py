@@ -13,14 +13,15 @@ else:
 
 #Method-2:
 x = int(input('Enter a number: '))
-for i in range(1, x+1):
-    if x < 2:
-        print('it is not a prime number')
-        break
-    elif x % i == 0:
-        print('it is not a prime number')
+if x<=1:
+    print('not prime')
 else:
-    print('It is a prime number')
+    for i in range(2,x):
+        if x%i == 0:
+            print('Not a prime')
+            break
+    else:
+        print('Prime')
 
 
 
